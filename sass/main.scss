@@ -1,0 +1,96 @@
+// @import "./abstracts/extensions";
+// @import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+// @import "./base/base";
+@import "./base/typography";
+// @import "./components/button";
+// @import "./layout/footer";
+// @import "./layout/header";
+// @import "./layout/nav";
+// @import "./pages/";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.block-logo {
+  display: flex;
+  justify-content: center;
+  &__logo {
+    margin: 25px 0 10px 0;
+    height: 30px;
+  }
+}
+
+.block-location {
+  background-color: #eaeaea;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  &__location {
+    white-space: nowrap;
+    margin: 15px 14% 15px 5%;
+  }
+}
+
+.block-reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__title {
+        max-width: 250px;
+    }
+    &__text {
+        margin: 10px 0 30px 0;
+    }
+}
+
+.block-fonctionnement {
+    display: flex;
+    flex-direction: column;
+    &__title {
+        margin: 60px 0 30px 0;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__icon {
+        margin: 0 5% 0 5%;
+    }
+    &__text {
+        margin: 10px 0 10px 0;
+    }
+}
+
+.block-restaurants {
+    &__block-img {
+        height: 190px;
+        width: 100%;
+    }
+    &__img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    &__caption {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.block-footer {
+    &__icon {
+        margin-right: 10px;
+    }
+}

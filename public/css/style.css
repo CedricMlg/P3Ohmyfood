@@ -1,1 +1,102 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.block-location__location {
+  font-weight: bold;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.block-logo {
+  display: flex;
+  justify-content: center;
+}
+.block-logo__logo {
+  margin: 25px 0 10px 0;
+  height: 30px;
+}
+
+.block-location {
+  background-color: #eaeaea;
+}
+.block-location__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.block-location__location {
+  white-space: nowrap;
+  margin: 15px 14% 15px 5%;
+}
+
+.block-reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.block-reservation__title {
+  max-width: 250px;
+}
+.block-reservation__text {
+  margin: 10px 0 30px 0;
+}
+
+.block-fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+.block-fonctionnement__title {
+  margin: 60px 0 30px 0;
+}
+.block-fonctionnement__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.block-fonctionnement__icon {
+  margin: 0 5% 0 5%;
+}
+.block-fonctionnement__text {
+  margin: 10px 0 10px 0;
+}
+
+.block-restaurants__block-img {
+  height: 190px;
+  width: 100%;
+}
+.block-restaurants__img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.block-restaurants__caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.block-footer__icon {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
