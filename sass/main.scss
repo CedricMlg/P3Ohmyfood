@@ -61,12 +61,21 @@ a {
   align-items: center;
   text-align: center;
   padding: 40px 25px 50px 25px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   &__title {
     max-width: 250px;
   }
   &__text {
     margin: 10px 0 30px 0;
+  }
+  &__btn {
+    margin: 0;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 200px;
+    background: linear-gradient(177deg, #ff79da 0%, #9356dc 100%);
+    border: none;
+    box-shadow: 0 0 5px 0 #2b2a2a3b;
   }
 }
 
@@ -74,6 +83,7 @@ a {
   padding: 0 25px 60px 25px;
   position: relative;
   &__grid {
+    padding-left: 15px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -101,6 +111,8 @@ a {
     flex-direction: row;
     align-items: center;
     border-radius: 15px;
+    max-width: 290px;
+    background-color: #f6f6f6;
     box-shadow: 0 0 5px 0 #2b2a2a3b;
   }
   &__number {
@@ -113,6 +125,7 @@ a {
   }
   &__icon {
     margin: 0 15px 0 25px;
+    color: #7e7e7e;
   }
   &__text {
     margin: 10px 0 10px 0;
@@ -120,7 +133,7 @@ a {
 }
 
 .block-restaurants {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 40px 25px 60px 25px;
   &__title {
     padding: 0 0 25px 0;
@@ -178,7 +191,11 @@ a {
     background-color: white;
     border-radius: 0 0 20px 20px;
     box-shadow: 0px 0px 20px 0px #1d1d1d2e;
-    padding: 20px 40px 20px 20px;
+    padding: 20px;
+  }
+  &__btn {
+    border: none;
+    background-color: white;
   }
 }
 
