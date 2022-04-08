@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
-h1, h2 {
+h1,
+h2 {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -7,7 +8,9 @@ h1, h2 {
   font-weight: bold;
 }
 
-h3, p {
+h3,
+p,
+a {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -16,6 +19,10 @@ h3, p {
 
 .block-location__location {
   font-weight: bold;
+}
+
+.block-logo-footer__logo {
+  font-family: "Shrikhand", sans-serif;
 }
 
 html,
@@ -33,6 +40,11 @@ figure {
 ul {
   margin: 0;
   padding: 0%;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
 }
 
 .block-logo {
@@ -63,6 +75,8 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 40px 25px 50px 25px;
+  background-color: #F6F6F6;
 }
 .block-reservation__title {
   max-width: 250px;
@@ -71,6 +85,10 @@ ul {
   margin: 10px 0 30px 0;
 }
 
+.block-fonctionnement {
+  padding: 0 25px 60px 25px;
+  position: relative;
+}
 .block-fonctionnement__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -89,20 +107,37 @@ ul {
   grid-area: list3;
 }
 .block-fonctionnement__title {
-  margin: 60px 0 40px 0;
+  padding: 50px 0 40px 0;
 }
 .block-fonctionnement__list {
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 0 #2b2a2a3b;
+}
+.block-fonctionnement__number {
+  background-color: #9356dc;
+  color: white;
+  padding: 3px 8px 3px 8px;
+  border-radius: 500px;
+  position: absolute;
+  transform: translateX(-50%);
 }
 .block-fonctionnement__icon {
-  margin: 0 5% 0 5%;
+  margin: 0 15px 0 25px;
 }
 .block-fonctionnement__text {
   margin: 10px 0 10px 0;
 }
 
+.block-restaurants {
+  background-color: #F6F6F6;
+  padding: 40px 25px 60px 25px;
+}
+.block-restaurants__title {
+  padding: 0 0 25px 0;
+}
 .block-restaurants__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -123,30 +158,83 @@ ul {
 .block-restaurants__grid > restau4 {
   grid-area: restau4;
 }
+.block-restaurants__restau {
+  position: relative;
+}
 .block-restaurants__block-img {
   height: 190px;
   width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.block-restaurants__new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 10px 20px;
 }
 .block-restaurants__img {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  border-radius: 20px 20px 0 0;
 }
 .block-restaurants__caption {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0px 0px 20px 0px #1d1d1d2e;
+  padding: 20px 40px 20px 20px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 0 25px 0 25px;
 }
 
 .block-logo-footer {
-  display: flex;
+  padding: 20px 0 20px 0;
 }
 .block-logo-footer__logo {
-  height: 18px;
+  color: white;
+  font-size: 20px;
 }
 
 .block-footer__icon {
-  margin-right: 10px;
+  width: 25px;
+}
+.block-footer__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  height: auto;
+  grid-gap: 10px;
+  grid-template-areas: "puce1" "puce2" "puce3" "puce4";
+}
+.block-footer__list > puce1 {
+  grid-area: puce1;
+}
+.block-footer__list > puce2 {
+  grid-area: puce2;
+}
+.block-footer__list > puce3 {
+  grid-area: puce3;
+}
+.block-footer__list > puce4 {
+  grid-area: puce4;
+}
+.block-footer__puce {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.block-footer__link {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

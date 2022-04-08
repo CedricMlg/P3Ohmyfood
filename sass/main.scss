@@ -27,6 +27,11 @@ ul {
   padding: 0%;
 }
 
+a {
+  text-decoration: none;
+  color: $intial-color;
+}
+
 .block-logo {
   display: flex;
   justify-content: center;
@@ -55,6 +60,8 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 40px 25px 50px 25px;
+  background-color: #F6F6F6;
   &__title {
     max-width: 250px;
   }
@@ -64,6 +71,8 @@ ul {
 }
 
 .block-fonctionnement {
+  padding: 0 25px 60px 25px;
+  position: relative;
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -85,15 +94,25 @@ ul {
     }
   }
   &__title {
-    margin: 60px 0 40px 0;
+    padding: 50px 0 40px 0;
   }
   &__list {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 0 #2b2a2a3b;
+  }
+  &__number {
+    background-color: $primaty-color;
+    color: white;
+    padding: 3px 8px 3px 8px;
+    border-radius: 500px;
+    position: absolute;
+    transform: translateX(-50%);
   }
   &__icon {
-    margin: 0 5% 0 5%;
+    margin: 0 15px 0 25px;
   }
   &__text {
     margin: 10px 0 10px 0;
@@ -101,6 +120,11 @@ ul {
 }
 
 .block-restaurants {
+  background-color: #F6F6F6;
+  padding: 40px 25px 60px 25px;
+  &__title {
+    padding: 0 0 25px 0;
+  }
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -125,31 +149,88 @@ ul {
       grid-area: restau4;
     }
   }
+  &__restau {
+    position: relative;
+  }
   &__block-img {
     height: 190px;
     width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  &__new {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: $tertiatry-color;
+    color: #1b6150;
+    padding: 10px 20px;
   }
   &__img {
     object-fit: cover;
     height: 100%;
     width: 100%;
+    border-radius: 20px 20px 0 0;
   }
   &__caption {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 0px 20px 0px #1d1d1d2e;
+    padding: 20px 40px 20px 20px;
   }
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 0 25px 0 25px;
+}
+
 .block-logo-footer {
-  display: flex;
+  padding: 20px 0 20px 0;
   &__logo {
-    height: 18px;
+    color: white;
+    font-size: 20px;
   }
 }
 
 .block-footer {
   &__icon {
-    margin-right: 10px;
+    width: 25px;
+  }
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "puce1"
+      "puce2"
+      "puce3"
+      "puce4";
+    & > puce1 {
+      grid-area: puce1;
+    }
+    & > puce2 {
+      grid-area: puce2;
+    }
+    & > puce3 {
+      grid-area: puce3;
+    }
+    & > puce4 {
+      grid-area: puce4;
+    }
+  }
+  &__puce {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__link {
+    color: white;
   }
 }
