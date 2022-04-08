@@ -25,6 +25,16 @@ body {
   padding: 0;
 }
 
+figure {
+  margin: 0;
+  padding: 0%;
+}
+
+ul {
+  margin: 0;
+  padding: 0%;
+}
+
 .block-logo {
   display: flex;
   justify-content: center;
@@ -45,7 +55,7 @@ body {
 }
 .block-location__location {
   white-space: nowrap;
-  margin: 15px 14% 15px 5%;
+  margin: 15px 40px 15px 15px;
 }
 
 .block-reservation {
@@ -61,12 +71,25 @@ body {
   margin: 10px 0 30px 0;
 }
 
-.block-fonctionnement {
-  display: flex;
-  flex-direction: column;
+.block-fonctionnement__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  height: auto;
+  grid-gap: 40px;
+  grid-template-areas: "list1" "list2" "list3";
+}
+.block-fonctionnement__grid > list1 {
+  grid-area: list1;
+}
+.block-fonctionnement__grid > list2 {
+  grid-area: list2;
+}
+.block-fonctionnement__grid > list3 {
+  grid-area: list3;
 }
 .block-fonctionnement__title {
-  margin: 60px 0 30px 0;
+  margin: 60px 0 40px 0;
 }
 .block-fonctionnement__list {
   display: flex;
@@ -80,6 +103,26 @@ body {
   margin: 10px 0 10px 0;
 }
 
+.block-restaurants__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  height: auto;
+  grid-gap: 40px;
+  grid-template-areas: "restau1" "restau2" "restau3" "restau4";
+}
+.block-restaurants__grid > restau1 {
+  grid-area: restau1;
+}
+.block-restaurants__grid > restau2 {
+  grid-area: restau2;
+}
+.block-restaurants__grid > restau3 {
+  grid-area: restau3;
+}
+.block-restaurants__grid > restau4 {
+  grid-area: restau4;
+}
 .block-restaurants__block-img {
   height: 190px;
   width: 100%;
@@ -93,6 +136,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.block-logo-footer {
+  display: flex;
+}
+.block-logo-footer__logo {
+  height: 18px;
 }
 
 .block-footer__icon {
