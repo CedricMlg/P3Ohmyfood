@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 h1,
 h2 {
   margin: 0;
@@ -23,6 +23,11 @@ a {
 
 .block-logo-footer__logo {
   font-family: "Shrikhand", sans-serif;
+}
+
+.block-menu__plats > h3 {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 html,
@@ -83,18 +88,22 @@ a {
 .block-menu {
   background-color: #f6f6f6;
   border-radius: 20px 20px 20px 20px;
+  padding: 0 25px 0 25px;
 }
 .block-menu__restau {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
 }
 .block-menu__titre {
   font-family: "Shrikhand", sans-serif;
 }
 .block-menu__choix {
   display: grid;
+}
+.block-menu__choix > h2 {
+  margin: 20px 0 10px 0;
 }
 .block-menu__validation {
   display: flex;
@@ -106,6 +115,20 @@ a {
   padding: 10px 20px 10px 10px;
   margin: 15px 0;
   box-shadow: 0px 0px 20px 0px #1d1d1d2e;
+}
+.block-menu__container-btn {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 50px 0;
+}
+.block-menu__btn {
+  margin: 0;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 200px;
+  background: linear-gradient(177deg, #ff79da 0%, #9356dc 100%);
+  border: none;
+  box-shadow: 0 0 5px 0 #2b2a2a3b;
 }
 
 .block-reservation {
