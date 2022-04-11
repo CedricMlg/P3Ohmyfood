@@ -36,9 +36,13 @@ a {
 .block-menu__plats > h3 {
   font-weight: bold;
   font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .block-menu__plats > p {
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .block-menu__prix > p {
   font-size: 15px;
@@ -70,9 +74,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.block-logo__icon {
-  margin: 15px 40px 0 0;
 }
 .block-logo__logo {
   margin: 25px 0 10px 0;
@@ -134,6 +135,11 @@ a {
   padding: 10px 20px 10px 10px;
   margin: 15px 0;
   box-shadow: 0px 0px 20px 0px #1d1d1d2e;
+  overflow: hidden;
+}
+.block-menu__plats {
+  overflow: hidden;
+  white-space: nowrap;
 }
 .block-menu__prix {
   font-weight: bold;
