@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>Ohmyfood</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <title>Ohmyfood</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
-</head>
+  <body>
+    <header>
+      <div class="block-logo">
+        <a href="./index.html">
+          <img
+            class="block-logo__logo"
+            src="./public/images/logo/ohmyfood.png"
+            alt="Logo ohmyfood"
+          />
+        </a>
+      </div>
+    </header>
 
-<body>
-  <header>
-    <div class="block-logo">
-      <a href="./index.html">
-        <img class="block-logo__logo" src="./public/images/logo/ohmyfood.png" alt="Logo ohmyfood" />
-      </a>
-    </div>
-  </header>
-
-  <main>
-    <div class="background-restau">
-      <img class="background-restau__img" src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-        alt="À le française" />
-    </div>
-    <section class="block-menu">
-      <div>
-        <div class="block-menu__restau">
-          <h1 class="block-menu__titre">À la française</h1>
-          <i class="block-restaurants__icon fa-regular fa-heart fa-2x"></i>
-        </div>
-        <div class="block-menu__choix" id="entrees">
-          <h2>ENTRÉES</h2>
-          <div class="block-menu__validation">
-            <div class="block-menu__plats">
-              <h3>Tatare de poulpe acidulé</h3>
-              <p>Aux zests d'orange</p>
-            </div>
-            <div class="block-menu__prix">
-              <p>25€</p>
+    <main>
+      <div class="background-restau">
+        <img
+          class="background-restau__img"
+          src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt="À le française"
+        />
+      </div>
+      <section class="block-menu">
+        <div>
+          <div class="block-menu__restau">
+            <h1 class="block-menu__titre">À la française</h1>
+            <i class="block-restaurants__icon fa-regular fa-heart fa-2x"></i>
+          </div>
+          <div class="block-menu__choix" id="entrees">
+            <h2>ENTRÉES</h2>
+            <div class="block-menu__validation">
+              <div class="block-menu__plats">
+                <h3>Tatare de poulpe acidulé</h3>
+                <p>Aux zests d'orange</p>
+              </div>
+              <div class="block-menu__prix">
+                <p>25€</p>
+              </div>
             </div>
             <div class="block-menu__validation">
               <div class="block-menu__plats">
@@ -128,42 +139,44 @@
             </button>
           </div>
         </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer>
-    <div class="block-logo-footer">
-      <a class="block-logo-footer__logo" href="./index.html"> ohmyfood </a>
-    </div>
+    <footer>
+      <div class="block-logo-footer">
+        <a class="block-logo-footer__logo" href="./index.html"> ohmyfood </a>
+      </div>
 
-    <div class="block-footer">
-      <ul class="block-footer__list">
-        <li>
-          <div class="block-footer__puce" id="puce1">
-            <i class="block-footer__icon fa-solid fa-utensils fa-lg"></i><a class="block-footer__link" href="#">Proposer
-              un restaurant</a>
-          </div>
-        </li>
-        <li>
-          <div class="block-footer__puce" id="puce2">
-            <i class="block-footer__icon fa-solid fa-handshake-angle"></i><a class="block-footer__link" href="#">Devenir
-              partenaire</a>
-          </div>
-        </li>
-        <li>
-          <div class="block-footer__puce" id="puce3">
-            <a class="block-footer__link" href="#">Mentions légales</a>
-          </div>
-        </li>
-        <li>
-          <div class="block-footer__puce" id="puce4">
-            <a class="block-footer__link"
-              href="mailto:contact@ohmyfood.com? subject=Contact visiteur ohmyfood">Contact</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </footer>
-</body>
-
+      <div class="block-footer">
+        <ul class="block-footer__list">
+          <li>
+            <div class="block-footer__puce" id="puce1">
+              <i class="block-footer__icon fa-solid fa-utensils fa-lg"></i
+              ><a class="block-footer__link" href="#">Proposer un restaurant</a>
+            </div>
+          </li>
+          <li>
+            <div class="block-footer__puce" id="puce2">
+              <i class="block-footer__icon fa-solid fa-handshake-angle"></i
+              ><a class="block-footer__link" href="#">Devenir partenaire</a>
+            </div>
+          </li>
+          <li>
+            <div class="block-footer__puce" id="puce3">
+              <a class="block-footer__link" href="#">Mentions légales</a>
+            </div>
+          </li>
+          <li>
+            <div class="block-footer__puce" id="puce4">
+              <a
+                class="block-footer__link"
+                href="mailto:contact@ohmyfood.com? subject=Contact visiteur ohmyfood"
+                >Contact</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
