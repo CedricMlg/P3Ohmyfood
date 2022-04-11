@@ -48,26 +48,51 @@ a {
   font-size: 15px;
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 0 25px 0 25px;
 }
 
-figure {
-  margin: 0;
-  padding: 0%;
+.block-logo-footer {
+  padding: 20px 0 20px 0;
+}
+.block-logo-footer__logo {
+  color: white;
+  font-size: 20px;
 }
 
-ul {
-  margin: 0;
-  padding: 0%;
+.block-footer__icon {
+  width: 25px;
 }
-
-a {
-  text-decoration: none;
-  color: initial;
+.block-footer__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  height: auto;
+  grid-gap: 10px;
+  grid-template-areas: "puce1" "puce2" "puce3" "puce4";
+}
+.block-footer__list > puce1 {
+  grid-area: puce1;
+}
+.block-footer__list > puce2 {
+  grid-area: puce2;
+}
+.block-footer__list > puce3 {
+  grid-area: puce3;
+}
+.block-footer__list > puce4 {
+  grid-area: puce4;
+}
+.block-footer__puce {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.block-footer__link {
+  color: white;
 }
 
 .block-logo {
@@ -92,95 +117,6 @@ a {
 .block-location__location {
   white-space: nowrap;
   margin: 15px 40px 15px 15px;
-}
-
-.background-restau {
-  width: 100%;
-  height: 300px;
-}
-.background-restau__img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.block-menu {
-  background-color: #f6f6f6;
-  border-radius: 30px 30px 0 0;
-  padding: 0 15px 0 15px;
-}
-.block-menu__restau {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 0 10px 0;
-}
-.block-menu__titre {
-  font-family: "Shrikhand", sans-serif;
-}
-.block-menu__choix {
-  display: grid;
-}
-.block-menu__choix > h2 {
-  margin: 20px 0 10px 0;
-}
-.block-menu__validation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-  align-items: flex-end;
-  border-radius: 20px 20px 20px 20px;
-  padding: 10px 20px 10px 10px;
-  margin: 15px 0;
-  box-shadow: 0px 0px 20px 0px #1d1d1d2e;
-  overflow: hidden;
-}
-.block-menu__plats {
-  overflow: hidden;
-  white-space: nowrap;
-}
-.block-menu__prix {
-  font-weight: bold;
-}
-.block-menu__container-btn {
-  display: flex;
-  justify-content: center;
-  padding: 30px 0 50px 0;
-}
-.block-menu__btn {
-  margin: 0;
-  color: white;
-  padding: 15px 40px;
-  border-radius: 200px;
-  background: linear-gradient(177deg, #ff79da 0%, #9356dc 100%);
-  border: none;
-  box-shadow: 0 0 5px 0 #2b2a2a3b;
-}
-
-.block-reservation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 40px 25px 50px 25px;
-  background-color: #f6f6f6;
-}
-.block-reservation__title {
-  max-width: 250px;
-}
-.block-reservation__text {
-  margin: 10px 0 30px 0;
-}
-.block-reservation__btn {
-  margin: 0;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 200px;
-  background: linear-gradient(177deg, #ff79da 0%, #9356dc 100%);
-  border: none;
-  box-shadow: 0 0 5px 0 #2b2a2a3b;
 }
 
 .block-fonctionnement {
@@ -296,51 +232,115 @@ a {
   background-color: white;
 }
 
-footer {
-  background-color: #353535;
-  color: white;
-  padding: 0 25px 0 25px;
+.background-restau {
+  width: 100%;
+  height: 300px;
+}
+.background-restau__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.block-logo-footer {
-  padding: 20px 0 20px 0;
+.block-menu {
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
+  padding: 0 15px 0 15px;
 }
-.block-logo-footer__logo {
-  color: white;
-  font-size: 20px;
-}
-
-.block-footer__icon {
-  width: 25px;
-}
-.block-footer__list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  height: auto;
-  grid-gap: 10px;
-  grid-template-areas: "puce1" "puce2" "puce3" "puce4";
-}
-.block-footer__list > puce1 {
-  grid-area: puce1;
-}
-.block-footer__list > puce2 {
-  grid-area: puce2;
-}
-.block-footer__list > puce3 {
-  grid-area: puce3;
-}
-.block-footer__list > puce4 {
-  grid-area: puce4;
-}
-.block-footer__puce {
+.block-menu__restau {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 10px 0;
 }
-.block-footer__link {
+.block-menu__titre {
+  font-family: "Shrikhand", sans-serif;
+}
+.block-menu__choix {
+  display: grid;
+}
+.block-menu__choix > h2 {
+  margin: 20px 0 10px 0;
+}
+.block-menu__validation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  align-items: flex-end;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 10px;
+  margin: 8px 0;
+  box-shadow: 0px 0px 20px 0px #1d1d1d2e;
+  overflow: hidden;
+}
+.block-menu__plats {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.block-menu__prix {
+  font-weight: bold;
+}
+.block-menu__container-btn {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 50px 0;
+}
+.block-menu__btn {
+  margin: 0;
   color: white;
+  padding: 15px 40px;
+  border-radius: 200px;
+  background: linear-gradient(177deg, #ff79da 0%, #9356dc 100%);
+  border: none;
+  box-shadow: 0 0 5px 0 #2b2a2a3b;
+}
+
+.block-reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 25px 50px 25px;
+  background-color: #f6f6f6;
+}
+.block-reservation__title {
+  max-width: 250px;
+}
+.block-reservation__text {
+  margin: 10px 0 30px 0;
+}
+.block-reservation__btn {
+  margin: 0;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 200px;
+  background: linear-gradient(177deg, #ff79da 0%, #9356dc 100%);
+  border: none;
+  box-shadow: 0 0 5px 0 #2b2a2a3b;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0%;
+}
+
+ul {
+  margin: 0;
+  padding: 0%;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
 }
 
 /*# sourceMappingURL=style.css.map */
