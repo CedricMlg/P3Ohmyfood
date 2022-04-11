@@ -25,9 +25,23 @@ a {
   font-family: "Shrikhand", sans-serif;
 }
 
+.block-menu__titre {
+  font-size: 30px;
+  font-weight: normal;
+}
+.block-menu__choix > h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
 .block-menu__plats > h3 {
   font-weight: bold;
   font-size: 20px;
+}
+.block-menu__plats > p {
+  font-size: 15px;
+}
+.block-menu__prix > p {
+  font-size: 15px;
 }
 
 html,
@@ -55,6 +69,10 @@ a {
 .block-logo {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.block-logo__icon {
+  margin: 15px 40px 0 0;
 }
 .block-logo__logo {
   margin: 25px 0 10px 0;
@@ -87,12 +105,13 @@ a {
 
 .block-menu {
   background-color: #f6f6f6;
-  border-radius: 20px 20px 20px 20px;
-  padding: 0 25px 0 25px;
+  border-radius: 30px 30px 0 0;
+  padding: 0 15px 0 15px;
 }
 .block-menu__restau {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding: 20px 0 10px 0;
 }
@@ -115,6 +134,9 @@ a {
   padding: 10px 20px 10px 10px;
   margin: 15px 0;
   box-shadow: 0px 0px 20px 0px #1d1d1d2e;
+}
+.block-menu__prix {
+  font-weight: bold;
 }
 .block-menu__container-btn {
   display: flex;
