@@ -25,9 +25,9 @@ a {
   }
 }
 
-.block-logo-footer {
-  &__logo {
-    font-family: $font-size-l;
+.block-reservation {
+  &__btn {
+    font-size: $font-size-s;
   }
 }
 
@@ -57,5 +57,14 @@ a {
     & > p {
       font-size: $font-size-s;
     }
+  }
+  &__btn {
+    font-size: $font-size-s;
+  }
+}
+
+.block-logo-footer {
+  &__logo {
+    font-size: $font-size-l;
   }
 }

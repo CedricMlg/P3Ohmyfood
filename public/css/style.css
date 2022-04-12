@@ -43,8 +43,8 @@ a {
   font-weight: bold;
 }
 
-.block-logo-footer__logo {
-  font-family: 25px;
+.block-reservation__btn {
+  font-size: 18px;
 }
 
 .block-menu__titre {
@@ -68,6 +68,13 @@ a {
 }
 .block-menu__prix > p {
   font-size: 18px;
+}
+.block-menu__btn {
+  font-size: 18px;
+}
+
+.block-logo-footer__logo {
+  font-size: 25px;
 }
 
 footer {
@@ -275,7 +282,7 @@ footer {
   box-shadow: 0px 0px 20px 0px #1d1d1d2e;
   padding: 20px;
 }
-.block-restaurants__btn {
+.block-restaurants__coeur {
   border: none;
   background-color: white;
 }
