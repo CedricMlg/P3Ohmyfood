@@ -43,8 +43,15 @@ a {
   font-weight: bold;
 }
 
+.block-reservation__text {
+  font-size: 18px;
+}
 .block-reservation__btn {
   font-size: 18px;
+}
+
+.block-fonctionnement__text {
+  font-weight: bold;
 }
 
 .block-menu__titre {
@@ -75,6 +82,7 @@ a {
 
 .block-logo-footer__logo {
   font-size: 25px;
+  font-family: "Shrikhand", sans-serif;
 }
 
 footer {
@@ -128,9 +136,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .block-logo__logo {
-  margin: 25px 0 10px 0;
+  margin: 25px 0 15px 0;
   height: 30px;
 }
 
@@ -161,6 +170,7 @@ footer {
 }
 .block-reservation__text {
   margin: 10px 0 30px 0;
+  color: rgba(129, 129, 129, 0.89);
 }
 .block-reservation__btn {
   margin: 0;
@@ -287,6 +297,13 @@ footer {
   background-color: white;
 }
 
+.block-logo__icon {
+  position: absolute;
+  left: 20px;
+  top: 42%;
+  font-size: 24px;
+}
+
 .background-restau {
   width: 100%;
   height: 300px;
@@ -316,7 +333,12 @@ footer {
   display: grid;
 }
 .block-menu__choix > h2 {
-  margin: 20px 0 10px 0;
+  margin: 20px 0 18px 0;
+}
+.block-menu__choix--underline {
+  text-decoration: underline 4px;
+  text-decoration-color: #99e2d0;
+  text-underline-offset: 8px;
 }
 .block-menu__validation {
   display: flex;

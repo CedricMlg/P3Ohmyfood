@@ -1,3 +1,12 @@
+.block-logo {
+  &__icon {
+    position: absolute;
+    left: 20px;
+    top: 42%;
+    font-size: 24px;
+  }
+}
+
 .background-restau {
   width: 100%;
   height: 300px;
@@ -25,7 +34,12 @@
   &__choix {
     display: grid;
     & > h2 {
-      margin: 20px 0 10px 0;
+      margin: 20px 0 18px 0;
+    }
+    &--underline {
+      text-decoration: underline 4px;
+      text-decoration-color: $tertiatry-color;
+      text-underline-offset: 8px;
     }
   }
   @include menu-card;
