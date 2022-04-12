@@ -3,7 +3,7 @@
 h1,
 h2 {
   @include main-typo;
-  font-size: $size-title;
+  font-size: $font-size-l;
   font-weight: bold;
 }
 
@@ -11,7 +11,12 @@ h3,
 p,
 a {
   @include main-typo;
-  font-size: $size-text;
+  font-size: $font-size-s;
+}
+
+a {
+  text-decoration: none;
+  color: $intial-color;
 }
 
 .block-location {
@@ -22,37 +27,35 @@ a {
 
 .block-logo-footer {
   &__logo {
-    font-family: $font-title;
+    font-family: $font-size-l;
   }
 }
 
 .block-menu {
   &__titre {
-    font-size: 30px;
+    font-size: $font-size-xl;
     font-weight: normal;
   }
   &__choix {
     & > h2 {
-      font-size: 20px;
+      font-size: $font-size-m;
       font-weight: normal;
     }
   }
   &__plats {
     & > h3 {
       font-weight: bold;
-      font-size: 20px;
-      text-overflow: ellipsis;
-      overflow: hidden;
+      font-size: $font-size-m;
+      @include txtretrac;
     }
     & > p {
-      font-size: 15px;
-      text-overflow: ellipsis;
-      overflow: hidden;
+      font-size: $font-size-s;
+      @include txtretrac;
     }
   }
   &__prix {
     & > p {
-      font-size: 15px;
+      font-size: $font-size-s;
     }
   }
 }
