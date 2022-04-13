@@ -8,3 +8,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+@mixin appears {
+  animation: 1000ms ease 0s 1 normal both running opacity;
+}
