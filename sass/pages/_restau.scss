@@ -62,6 +62,25 @@
     justify-content: space-between;
     padding: 20px 0 10px 0;
   }
+  &--grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: auto;
+    grid-template-areas:
+      "entrees"
+      "plats"
+      "desserts";
+    & > entrees {
+      grid-area: entrees;
+    }
+    & > plats {
+      grid-area: plats;
+    }
+    & > desserts {
+      grid-area: desserts;
+    }
+  }
   &__titre {
     font-family: $font-title;
   }
