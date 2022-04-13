@@ -1,0 +1,118 @@
+.block-location {
+  background-color: #eaeaea;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  &__location {
+    white-space: nowrap;
+    margin: 15px 20px 15px 15px;
+  }
+}
+
+.block-reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 25px 50px 25px;
+  background-color: $background-color;
+  &__title {
+    max-width: 250px;
+  }
+  &__text {
+    margin: 10px 0 30px 0;
+    color: rgba(129, 129, 129, 0.89);
+  }
+  &__btn {
+    @include btn-bicolor;
+  }
+}
+
+.block-fonctionnement {
+  padding: 0 25px 60px 25px;
+  position: relative;
+  &__grid {
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: auto;
+    grid-gap: 40px;
+    grid-template-areas:
+      "list1"
+      "list2"
+      "list3";
+    & > list1 {
+      grid-area: list1;
+    }
+    & > list2 {
+      grid-area: list2;
+    }
+    & > list3 {
+      grid-area: list3;
+    }
+  }
+  &__title {
+    padding: 50px 0 40px 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    max-width: 290px;
+    background-color: $background-color;
+    box-shadow: 0 0 5px 0 #2b2a2a3b;
+  }
+  &__number {
+    background-color: $primaty-color;
+    color: white;
+    padding: 3px 8px 3px 8px;
+    border-radius: 500px;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  &__icon {
+    margin: 0 15px 0 25px;
+    color: #7e7e7e;
+  }
+  &__text {
+    margin: 10px 0 10px 0;
+  }
+}
+
+.block-restaurants {
+  background-color: $background-color;
+  padding: 40px 25px 60px 25px;
+  &__title {
+    padding: 0 0 25px 0;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height: auto;
+    grid-gap: 40px;
+    grid-template-areas:
+      "restau1"
+      "restau2"
+      "restau3"
+      "restau4";
+    & > restau1 {
+      grid-area: restau1;
+    }
+    & > restau2 {
+      grid-area: restau2;
+    }
+    & > restau3 {
+      grid-area: restau3;
+    }
+    & > restau4 {
+      grid-area: restau4;
+    }
+  }
+  @include resteau-card;
+}
