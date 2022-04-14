@@ -217,10 +217,14 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
   border-radius: 15px;
   max-width: 290px;
   background-color: #f6f6f6;
   box-shadow: 0 0 5px 0 #2b2a2a3b;
+}
+.block-fonctionnement__list:hover i {
+  color: #9356dc;
 }
 .block-fonctionnement__number {
   background-color: #9356dc;
