@@ -49,42 +49,18 @@
     box-shadow: 0px 0px 20px 0px #1d1d1d2e;
     overflow: hidden;
     cursor: pointer;
-    transition: all 1s;
     &--apparition {
-      @include appears;
-      @keyframes opacity {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
+      animation: 1000ms ease 0ms both opacity;
+      @include keyopacity;
     }
     &:hover {
       & .block-menu__prix {
         padding-right: 85px;
-        transition: 750ms ease;
       }
       & .block-menu__valid {
-        display: block;
-        @keyframes slide {
-          0% {
-            transform: scaleX(0);
-          }
-          100% {
-            transform: scaleX(1);
-          }
-        }
+        transform: scaleX(1);
         & i {
-          @keyframes rotate {
-            0% {
-              transform: rotate(0);
-            }
-            100% {
-              transform: rotate(360deg);
-            }
-          }
+          animation: 750ms ease 0ms both rotate;
         }
       }
     }
@@ -97,21 +73,30 @@
   &__prix {
     font-weight: bold;
     padding: 0 15px 15px 6px;
+    transition: 750ms ease;
   }
   &__valid {
     position: absolute;
     right: 0px;
-    display: none;
     padding: 0 20px;
     height: 100%;
     background-color: $tertiary-color;
-    animation: 750ms ease 0ms alternate slide;
+    transition: 750ms ease;
+    transform: scaleX(0);
     transform-origin: right 50%;
+    // animation: 750ms ease 0ms alternate slide;
+    // @keyframes slide {
+    //   0% {
+    //     transform: scaleX(0);
+    //   }
+    //   100% {
+    //     transform: scaleX(1);
+    //   }
+    // }
     & i {
       color: white;
-      transform: rotate(180deg);
       margin-top: 38px;
-      animation: 750ms ease 0ms both rotate;
+      @include keyrotate;
     }
   }
 }
