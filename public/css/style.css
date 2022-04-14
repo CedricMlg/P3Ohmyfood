@@ -389,6 +389,7 @@ footer {
   text-underline-offset: 8px;
 }
 .block-menu__validation {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -412,15 +413,19 @@ footer {
     opacity: 1;
   }
 }
+.block-menu__validation:hover .block-menu__prix {
+  padding-right: 85px;
+  transition: 750ms ease;
+}
 .block-menu__validation:hover .block-menu__valid {
   display: block;
 }
 @keyframes slide {
   0% {
-    transform: translateX(0);
+    transform: scaleX(0);
   }
   100% {
-    transform: translateX(1);
+    transform: scaleX(1);
   }
 }
 @keyframes rotate {
@@ -441,19 +446,20 @@ footer {
   padding: 0 15px 15px 6px;
 }
 .block-menu__valid {
+  position: absolute;
+  right: 0px;
   display: none;
   padding: 0 20px;
   height: 100%;
   background-color: #99e2d0;
-  transition: transform 1s;
-  animation: 500ms ease 0ms 1 both slide;
+  animation: 750ms ease 0ms alternate slide;
+  transform-origin: right 50%;
 }
 .block-menu__valid i {
   color: white;
-  transition: transform 1s;
   transform: rotate(180deg);
   margin-top: 38px;
-  animation: 500ms ease 0ms 1 both rotate;
+  animation: 750ms ease 0ms both rotate;
 }
 .block-menu__container-btn {
   display: flex;

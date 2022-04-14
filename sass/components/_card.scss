@@ -38,6 +38,7 @@
 
 @mixin menu-card {
   &__validation {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,23 +61,29 @@
         }
       }
     }
-    &:hover .block-menu__valid {
-      display: block;
-      @keyframes slide {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(1);
-        }
+    &:hover {
+      & .block-menu__prix {
+        padding-right: 85px;
+        transition: 750ms ease;
       }
-      & i {
-        @keyframes rotate {
+      & .block-menu__valid {
+        display: block;
+        @keyframes slide {
           0% {
-            transform: rotate(0);
+            transform: scaleX(0);
           }
           100% {
-            transform: rotate(360deg);
+            transform: scaleX(1);
+          }
+        }
+        & i {
+          @keyframes rotate {
+            0% {
+              transform: rotate(0);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
           }
         }
       }
@@ -92,18 +99,19 @@
     padding: 0 15px 15px 6px;
   }
   &__valid {
+    position: absolute;
+    right: 0px;
     display: none;
     padding: 0 20px;
     height: 100%;
     background-color: $tertiary-color;
-    transition: transform 1s;
-    animation: 500ms ease 0ms 1 both slide;
+    animation: 750ms ease 0ms alternate slide;
+    transform-origin: right 50%;
     & i {
       color: white;
-      transition: transform 1s;
       transform: rotate(180deg);
       margin-top: 38px;
-      animation: 500ms ease 0ms 1 both rotate;
+      animation: 750ms ease 0ms both rotate;
     }
   }
 }
