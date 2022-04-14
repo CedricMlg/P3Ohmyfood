@@ -183,6 +183,10 @@ footer {
   box-shadow: 0 0 5px 0 #2b2a2a3b;
   height: auto;
 }
+.block-reservation__btn:hover {
+  background: linear-gradient(177deg, #ff93e1 0%, #a16be0 100%);
+  cursor: pointer;
+}
 
 .block-fonctionnement {
   padding: 0 25px 60px 25px;
@@ -470,6 +474,10 @@ footer {
   border: none;
   box-shadow: 0 0 5px 0 #2b2a2a3b;
   height: auto;
+}
+.block-menu__btn:hover {
+  background: linear-gradient(177deg, #ff93e1 0%, #a16be0 100%);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
