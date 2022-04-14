@@ -325,31 +325,31 @@ footer {
   animation-delay: 100ms;
 }
 .block-menu__container #card2 {
-  animation-delay: 200ms;
-}
-.block-menu__container #card3 {
   animation-delay: 300ms;
 }
-.block-menu__container #card4 {
-  animation-delay: 400ms;
-}
-.block-menu__container #card5 {
+.block-menu__container #card3 {
   animation-delay: 500ms;
 }
-.block-menu__container #card6 {
-  animation-delay: 600ms;
-}
-.block-menu__container #card7 {
+.block-menu__container #card4 {
   animation-delay: 700ms;
 }
-.block-menu__container #card8 {
-  animation-delay: 800ms;
-}
-.block-menu__container #card9 {
+.block-menu__container #card5 {
   animation-delay: 900ms;
 }
+.block-menu__container #card6 {
+  animation-delay: 1100ms;
+}
+.block-menu__container #card7 {
+  animation-delay: 1300ms;
+}
+.block-menu__container #card8 {
+  animation-delay: 1500ms;
+}
+.block-menu__container #card9 {
+  animation-delay: 1700ms;
+}
 .block-menu__container #card10 {
-  animation-delay: 1000ms;
+  animation-delay: 1900ms;
 }
 .block-menu__restau {
   display: flex;
@@ -402,14 +402,16 @@ footer {
   cursor: pointer;
 }
 .block-menu__validation--apparition {
-  animation: 1000ms ease 0ms both opacity;
+  animation: 1000ms ease 0ms both appear;
 }
-@keyframes opacity {
+@keyframes appear {
   0% {
     opacity: 0;
+    transform: translateY(20%);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 .block-menu__validation:hover .block-menu__prix {

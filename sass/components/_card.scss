@@ -50,8 +50,8 @@
     overflow: hidden;
     cursor: pointer;
     &--apparition {
-      animation: 1000ms ease 0ms both opacity;
-      @include keyopacity;
+      animation: 1000ms ease 0ms both appear;
+      @include keyappear;
     }
     &:hover {
       & .block-menu__prix {
