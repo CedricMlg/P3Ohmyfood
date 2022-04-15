@@ -10,7 +10,7 @@
   visibility: hidden;
   animation: 2500ms ease 0ms both disappear;
   @include loader;
-  @include keydisappear
+  @include keydisappear;
 }
 
 .block-location {

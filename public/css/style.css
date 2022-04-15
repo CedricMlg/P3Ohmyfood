@@ -157,7 +157,7 @@ footer {
 }
 .block-loader__loader {
   background: linear-gradient(to right, #9356dc 0%, #ff70da 50%, #99e2d0 90%);
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 10px), black 0);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #fff 0);
   mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #fff 0);
   border-radius: 100%;
   position: fixed;
