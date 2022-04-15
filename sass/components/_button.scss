@@ -8,8 +8,13 @@
   border: none;
   box-shadow: 0 0 5px 0 #2b2a2a3b;
   height: auto;
-  &:hover {
+  cursor: pointer;
+  z-index: 1;
+  &--lighter {
     background: linear-gradient(177deg, lighten(#ff79da, 5%) 0%, lighten(#9356dc, 5%) 100%);
-    cursor: pointer;
+    z-index: -1;
+  }
+  &:hover {
+    opacity: 0;
   }
 }
