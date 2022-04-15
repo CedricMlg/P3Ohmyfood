@@ -182,10 +182,25 @@ footer {
   border: none;
   box-shadow: 0 0 5px 0 #2b2a2a3b;
   height: auto;
-}
-.block-reservation__btn:hover {
-  background: linear-gradient(177deg, #ff93e1 0%, #a16be0 100%);
+  position: relative;
   cursor: pointer;
+  z-index: 1;
+}
+.block-reservation__btn:hover::after {
+  opacity: 1;
+}
+.block-reservation__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 200px;
+  background: linear-gradient(177deg, #ff93e1 0%, #a16be0 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 .block-fonctionnement {
@@ -478,10 +493,25 @@ footer {
   border: none;
   box-shadow: 0 0 5px 0 #2b2a2a3b;
   height: auto;
-}
-.block-menu__btn:hover {
-  background: linear-gradient(177deg, #ff93e1 0%, #a16be0 100%);
+  position: relative;
   cursor: pointer;
+  z-index: 1;
+}
+.block-menu__btn:hover::after {
+  opacity: 1;
+}
+.block-menu__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 200px;
+  background: linear-gradient(177deg, #ff93e1 0%, #a16be0 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 /*# sourceMappingURL=style.css.map */
