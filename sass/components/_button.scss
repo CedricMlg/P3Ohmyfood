@@ -6,7 +6,7 @@
   border-radius: 200px;
   background: linear-gradient(177deg, (#ff79da) 0%, (#9356dc) 100%);
   border: none;
-  box-shadow: 0 0 5px 0 #2b2a2a3b;
+  box-shadow: 0 0 8px 0 #2b2a2a59;
   height: auto;
   position: relative;
   cursor: pointer;
@@ -29,6 +29,7 @@
       lighten(#ff79da, 5%) 0%,
       lighten(#9356dc, 5%) 100%
     );
+    box-shadow: 0 0 8px 0 #2b2a2a62;
     opacity: 0;
     z-index: -1;
     transition: opacity 250ms;
