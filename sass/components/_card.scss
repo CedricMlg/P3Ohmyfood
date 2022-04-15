@@ -84,15 +84,6 @@
     transition: 750ms ease;
     transform: scaleX(0);
     transform-origin: right 50%;
-    // animation: 750ms ease 0ms alternate slide;
-    // @keyframes slide {
-    //   0% {
-    //     transform: scaleX(0);
-    //   }
-    //   100% {
-    //     transform: scaleX(1);
-    //   }
-    // }
     & i {
       color: white;
       margin-top: 38px;

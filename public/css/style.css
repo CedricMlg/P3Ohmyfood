@@ -143,6 +143,46 @@ footer {
   height: 30px;
 }
 
+.block-loader {
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  visibility: hidden;
+  animation: 2500ms ease 0ms both disappear;
+}
+.block-loader__loader {
+  background: linear-gradient(to right, #9356dc 0%, #ff70da 50%, #99e2d0 90%);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 10px), black 0);
+  mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #fff 0);
+  border-radius: 100%;
+  position: fixed;
+  inset: calc(50% - 80px);
+  animation: 2000ms linear 0ms both loading;
+}
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes disappear {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .block-location {
   background-color: #eaeaea;
 }
@@ -178,7 +218,7 @@ footer {
   padding: 15px 0;
   width: 240px;
   border-radius: 200px;
-  background: linear-gradient(177deg, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(177deg, #ff70da 0%, #9356dc 100%);
   border: none;
   box-shadow: 0 0 8px 0 #2b2a2a59;
   height: auto;
@@ -197,7 +237,7 @@ footer {
   bottom: 0;
   left: 0;
   border-radius: 200px;
-  background: linear-gradient(177deg, #ff93e1 0%, #a16be0 100%);
+  background: linear-gradient(177deg, #ff8ae1 0%, #a16be0 100%);
   box-shadow: 0 0 8px 0 #2b2a2a62;
   opacity: 0;
   z-index: -1;
@@ -490,7 +530,7 @@ footer {
   padding: 15px 0;
   width: 240px;
   border-radius: 200px;
-  background: linear-gradient(177deg, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(177deg, #ff70da 0%, #9356dc 100%);
   border: none;
   box-shadow: 0 0 8px 0 #2b2a2a59;
   height: auto;
@@ -509,7 +549,7 @@ footer {
   bottom: 0;
   left: 0;
   border-radius: 200px;
-  background: linear-gradient(177deg, #ff93e1 0%, #a16be0 100%);
+  background: linear-gradient(177deg, #ff8ae1 0%, #a16be0 100%);
   box-shadow: 0 0 8px 0 #2b2a2a62;
   opacity: 0;
   z-index: -1;
