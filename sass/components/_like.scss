@@ -14,6 +14,10 @@
         opacity: 1;
         animation: 2000ms ease-in-out 0ms forwards fill-heart;
       }
+      & + .block-menu__coeur--plein {
+        opacity: 1;
+        animation: 2000ms ease-in-out 0ms forwards fill-heart;
+      }
     }
   }
   &--plein {

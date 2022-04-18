@@ -379,6 +379,10 @@ footer {
   opacity: 1;
   animation: 2000ms ease-in-out 0ms forwards fill-heart;
 }
+.block-restaurants__coeur--vide:hover + .block-menu__coeur--plein {
+  opacity: 1;
+  animation: 2000ms ease-in-out 0ms forwards fill-heart;
+}
 .block-restaurants__coeur--plein {
   width: 32px;
   position: absolute;
@@ -477,6 +481,51 @@ footer {
 }
 .block-menu__titre {
   font-family: "Shrikhand", sans-serif;
+}
+.block-menu__block-coeur {
+  width: 30px;
+  height: 30px;
+}
+.block-menu__coeur {
+  overflow: visible;
+}
+.block-menu__coeur--vide {
+  width: 30px;
+  position: absolute;
+  z-index: 1;
+  stroke: black;
+  stroke-width: 20;
+  fill: transparent;
+  transition: opacity 1500ms;
+}
+.block-menu__coeur--vide:hover {
+  opacity: 0;
+}
+.block-menu__coeur--vide:hover + .block-restaurants__coeur--plein {
+  opacity: 1;
+  animation: 2000ms ease-in-out 0ms forwards fill-heart;
+}
+.block-menu__coeur--vide:hover + .block-menu__coeur--plein {
+  opacity: 1;
+  animation: 2000ms ease-in-out 0ms forwards fill-heart;
+}
+.block-menu__coeur--plein {
+  width: 32px;
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  stroke: none;
+  stroke-width: 20;
+  transition: opacity 1500ms;
+  fill: url(#gradientheart);
+}
+@keyframes fill-heart {
+  0% {
+    fill: transparent;
+  }
+  80% {
+    fill: url(#gradientheart);
+  }
 }
 .block-menu__choix {
   display: grid;
