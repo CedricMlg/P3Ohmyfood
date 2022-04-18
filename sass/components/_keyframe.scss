@@ -45,3 +45,25 @@
     }
   }
 }
+
+@mixin keyfillheart {
+  @keyframes fill-heart {
+    0% {
+      fill: transparent;
+    }
+    80% {
+      fill: url(#gradientheart);
+    }
+  }
+}
+
+// @mixin keyfillheart {
+//   @keyframes fill-heart {
+//     0% {
+//       transform: scaleY(0);
+//     }
+//     100% {
+//       transform: scaleY(1);
+//     }
+//   }
+// }
