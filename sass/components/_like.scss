@@ -21,11 +21,11 @@
     }
   }
   &--plein {
-    width: 32px;
+    width: 30px;
     position: absolute;
     opacity: 0;
     z-index: 0;
-    stroke: none;
+    stroke: transparent;
     stroke-width: 20;
     transition: opacity 1500ms;
     fill: url(#gradientheart);

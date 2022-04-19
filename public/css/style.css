@@ -384,21 +384,21 @@ footer {
   animation: 2000ms ease-in-out 0ms forwards fill-heart;
 }
 .block-restaurants__coeur--plein {
-  width: 32px;
+  width: 30px;
   position: absolute;
   opacity: 0;
   z-index: 0;
-  stroke: none;
+  stroke: transparent;
   stroke-width: 20;
   transition: opacity 1500ms;
   fill: url(#gradientheart);
 }
 @keyframes fill-heart {
   0% {
-    fill: transparent;
+    transform: scale(0);
   }
-  80% {
-    fill: url(#gradientheart);
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -510,21 +510,21 @@ footer {
   animation: 2000ms ease-in-out 0ms forwards fill-heart;
 }
 .block-menu__coeur--plein {
-  width: 32px;
+  width: 30px;
   position: absolute;
   opacity: 0;
   z-index: 0;
-  stroke: none;
+  stroke: transparent;
   stroke-width: 20;
   transition: opacity 1500ms;
   fill: url(#gradientheart);
 }
 @keyframes fill-heart {
   0% {
-    fill: transparent;
+    transform: scale(0);
   }
-  80% {
-    fill: url(#gradientheart);
+  100% {
+    transform: scale(1);
   }
 }
 .block-menu__choix {
@@ -568,7 +568,7 @@ footer {
   padding-right: 75px;
 }
 .block-menu__validation:hover .block-menu__valid {
-  transform: scaleX(1);
+  transform: translateX(0);
 }
 .block-menu__validation:hover .block-menu__valid i {
   animation: 750ms ease 0ms both rotate;
@@ -580,7 +580,7 @@ footer {
 }
 .block-menu__prix {
   font-weight: bold;
-  padding: 0 20px 15px 6px;
+  padding: 0 25px 15px 6px;
   transition: 750ms ease;
 }
 .block-menu__valid {
@@ -590,7 +590,7 @@ footer {
   height: 100%;
   background-color: #99e2d0;
   transition: 750ms ease;
-  transform: scaleX(0);
+  transform: translateX(64px);
   transform-origin: right 50%;
 }
 .block-menu__valid i {

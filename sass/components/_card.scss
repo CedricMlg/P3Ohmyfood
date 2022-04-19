@@ -61,7 +61,7 @@
         padding-right: 75px;
       }
       & .block-menu__valid {
-        transform: scaleX(1);
+        transform: translateX(0);
         & i {
           animation: 750ms ease 0ms both rotate;
         }
@@ -75,7 +75,7 @@
   }
   &__prix {
     font-weight: bold;
-    padding: 0 20px 15px 6px;
+    padding: 0 25px 15px 6px;
     transition: 750ms ease;
   }
   &__valid {
@@ -85,7 +85,7 @@
     height: 100%;
     background-color: $tertiary-color;
     transition: 750ms ease;
-    transform: scaleX(0);
+    transform: translateX(64px);
     transform-origin: right 50%;
     & i {
       color: white;
