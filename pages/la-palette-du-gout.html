@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <title>Ohmyfood</title>
+    <meta
+      name="description"
+      content="Profitez d'un choix varié de restaurants dans les environs de Paris, choisissez un restaurant et composez votre menu parmi les plats proposés avec leurs cartes de plats"
+    />
+    <title>ohmyfood</title>
 
     <link
       rel="stylesheet"
@@ -13,8 +16,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
-  </head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../public/css/prefixed/style.css"
+    />
 
   <body>
     <header>
@@ -39,81 +45,175 @@
         />
       </div>
       <section class="block-menu">
-        <div>
+        <div class="block-menu__container">
           <div class="block-menu__restau">
             <h1 class="block-menu__titre">La palette du goût</h1>
-            <i class="block-restaurants__icon fa-regular fa-heart fa-xl"></i>
-          </div>
-          <div class="block-menu__choix" id="entrees">
-            <h2><span class="block-menu__choix--underline">ENTR</span>ÉES</h2>
-            <div class="block-menu__validation">
-              <div class="block-menu__plats">
-                <h3>Fricassée d'escargot</h3>
-                <p>Au pimet d'espelette</p>
-              </div>
-              <div class="block-menu__prix"><p>25€</p></div>
-            </div>
-            <div class="block-menu__validation">
-              <div class="block-menu__plats">
-                <h3>Foie gras de canard mi-cuit</h3>
-                <p>Et ses coupeaux de truffe noire</p>
-              </div>
-              <div class="block-menu__prix"><p>35€</p></div>
-            </div>
-            <div class="block-menu__validation">
-              <div class="block-menu__plats">
-                <h3>Oeuf au plat</h3>
-                <p>Assaisonné à la truffe sur lit de caviar</p>
-              </div>
-              <div class="block-menu__prix"><p>20€</p></div>
-            </div>
-          </div>
-          <div class="block-menu__choix" id="plats">
-            <h2><span class="block-menu__choix--underline">PLAT</span>S</h2>
-            <div class="block-menu__validation">
-              <div class="block-menu__plats">
-                <h3>Filet de boeuf aux herbes</h3>
-                <p>Accompagné de sa rimbambelle de légumes</p>
-              </div>
-              <div class="block-menu__prix"><p>40€</p></div>
-            </div>
-            <div class="block-menu__validation">
-              <div class="block-menu__plats">
-                <h3>Parmentier de queue de boeuf</h3>
-                <p>À la truffe noire sur sa purée de panais</p>
-              </div>
-              <div class="block-menu__prix"><p>35€</p></div>
-            </div>
-            <div class="block-menu__validation">
-              <div class="block-menu__plats">
-                <h3>Filet de Turbot</h3>
-                <p>Aux agrumes</p>
-              </div>
-              <div class="block-menu__prix"><p>44€</p></div>
+            <div class="block-menu__block-coeur">
+              <svg
+                class="block-menu__coeur block-menu__coeur--vide"
+                viewBox="0 0 600 600"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                C512,93.417,453.532,30,376,30z"
+                ></path>
+              </svg>
+              <svg
+                class="block-menu__coeur block-menu__coeur--plein"
+                viewBox="0 0 600 600"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                C512,93.417,453.532,30,376,30z"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="gradientheart"
+                    gradientTransform="rotate(-22)"
+                  >
+                    <stop offset="0%" stop-color="#ff70da"></stop>
+                    <stop offset="100%" stop-color="#9356dc"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
           </div>
-          <div class="block-menu__choix" id="desserts">
-            <h2><span class="block-menu__choix--underline">DESS</span>ERTS</h2>
-            <div class="block-menu__validation">
-              <div class="block-menu__plats">
-                <h3>Paris-Brest</h3>
-                <p>Revisité</p>
+          <div class="block-menu--grid">
+            <div class="block-menu__choix" id="entrees">
+              <h2><span class="block-menu__choix--underline">ENTR</span>ÉES</h2>
+              <div
+                class="block-menu__validation block-menu__validation--apparition"
+                id="card1"
+              >
+                <div class="block-menu__plats">
+                  <h3>Fricassée d'escargot</h3>
+                  <p>Au pimet d'espelette</p>
+                </div>
+                <div class="block-menu__prix"><p>25€</p></div>
+                <div class="block-menu__valid">
+                  <i class="fas fa-check-circle fa-xl"></i>
+                </div>
               </div>
-              <div class="block-menu__prix"><p>18€</p></div>
+              <div
+                class="block-menu__validation block-menu__validation--apparition"
+                id="card2"
+              >
+                <div class="block-menu__plats">
+                  <h3>Foie gras de canard mi-cuit</h3>
+                  <p>Et ses coupeaux de truffe noire</p>
+                </div>
+                <div class="block-menu__prix"><p>35€</p></div>
+                <div class="block-menu__valid">
+                  <i class="fas fa-check-circle fa-xl"></i>
+                </div>
+              </div>
+              <div
+                class="block-menu__validation block-menu__validation--apparition"
+                id="card3"
+              >
+                <div class="block-menu__plats">
+                  <h3>Oeuf au plat</h3>
+                  <p>Assaisonné à la truffe sur lit de caviar</p>
+                </div>
+                <div class="block-menu__prix"><p>20€</p></div>
+                <div class="block-menu__valid">
+                  <i class="fas fa-check-circle fa-xl"></i>
+                </div>
+              </div>
             </div>
-            <div class="block-menu__validation">
-              <div class="block-menu__plats">
-                <h3>Macaron au chocolat d'exception</h3>
-                <p>Et glace à la vanille de Madagascar</p>
+            <div class="block-menu__choix" id="plats">
+              <h2><span class="block-menu__choix--underline">PLAT</span>S</h2>
+              <div
+                class="block-menu__validation block-menu__validation--apparition"
+                id="card4"
+              >
+                <div class="block-menu__plats">
+                  <h3>Filet de boeuf aux herbes</h3>
+                  <p>Accompagné de sa rimbambelle de légumes</p>
+                </div>
+                <div class="block-menu__prix"><p>40€</p></div>
+                <div class="block-menu__valid">
+                  <i class="fas fa-check-circle fa-xl"></i>
+                </div>
               </div>
-              <div class="block-menu__prix"><p>22€</p></div>
+              <div
+                class="block-menu__validation block-menu__validation--apparition"
+                id="card5"
+              >
+                <div class="block-menu__plats">
+                  <h3>Parmentier de queue de boeuf</h3>
+                  <p>À la truffe noire sur sa purée de panais</p>
+                </div>
+                <div class="block-menu__prix"><p>35€</p></div>
+                <div class="block-menu__valid">
+                  <i class="fas fa-check-circle fa-xl"></i>
+                </div>
+              </div>
+              <div
+                class="block-menu__validation block-menu__validation--apparition"
+                id="card6"
+              >
+                <div class="block-menu__plats">
+                  <h3>Filet de Turbot</h3>
+                  <p>Aux agrumes</p>
+                </div>
+                <div class="block-menu__prix"><p>44€</p></div>
+                <div class="block-menu__valid">
+                  <i class="fas fa-check-circle fa-xl"></i>
+                </div>
+              </div>
             </div>
-            <div class="block-menu__validation">
-              <div class="block-menu__plats">
-                <h3>Mousse au chocolat</h3>
-                <p>Au piment d'espelette et à la truffe noir</p>
+            <div class="block-menu__choix" id="desserts">
+              <h2>
+                <span class="block-menu__choix--underline">DESS</span>ERTS
+              </h2>
+              <div
+                class="block-menu__validation block-menu__validation--apparition"
+                id="card7"
+              >
+                <div class="block-menu__plats">
+                  <h3>Paris-Brest</h3>
+                  <p>Revisité</p>
+                </div>
+                <div class="block-menu__prix"><p>18€</p></div>
+                <div class="block-menu__valid">
+                  <i class="fas fa-check-circle fa-xl"></i>
+                </div>
               </div>
-              <div class="block-menu__prix"><p>23€</p></div>
+              <div
+                class="block-menu__validation block-menu__validation--apparition"
+                id="card8"
+              >
+                <div class="block-menu__plats">
+                  <h3>Macaron au chocolat d'exception</h3>
+                  <p>Et glace à la vanille de Madagascar</p>
+                </div>
+                <div class="block-menu__prix"><p>22€</p></div>
+                <div class="block-menu__valid">
+                  <i class="fas fa-check-circle fa-xl"></i>
+                </div>
+              </div>
+              <div
+                class="block-menu__validation block-menu__validation--apparition"
+                id="card9"
+              >
+                <div class="block-menu__plats">
+                  <h3>Mousse au chocolat</h3>
+                  <p>Au piment d'espelette et à la truffe noir</p>
+                </div>
+                <div class="block-menu__prix"><p>23€</p></div>
+                <div class="block-menu__valid">
+                  <i class="fas fa-check-circle fa-xl"></i>
+                </div>
+              </div>
             </div>
           </div>
           <div class="block-menu__container-btn">
