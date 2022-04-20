@@ -88,7 +88,7 @@ a {
 footer {
   background-color: #353535;
   color: white;
-  padding: 0 25px 0 25px;
+  padding: 0 25px 35px 25px;
 }
 
 .block-logo-footer {
@@ -111,16 +111,16 @@ footer {
   grid-gap: 10px;
   grid-template-areas: "puce1" "puce2" "puce3" "puce4";
 }
-.block-footer__list > puce1 {
+.block-footer__list > #puce1 {
   grid-area: puce1;
 }
-.block-footer__list > puce2 {
+.block-footer__list > #puce2 {
   grid-area: puce2;
 }
-.block-footer__list > puce3 {
+.block-footer__list > #puce3 {
   grid-area: puce3;
 }
-.block-footer__list > puce4 {
+.block-footer__list > #puce4 {
   grid-area: puce4;
 }
 .block-footer__puce {
@@ -132,6 +132,20 @@ footer {
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .block-footer__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "puce1 puce3" "puce2 puce4";
+  }
+}
+@media screen and (min-width: 1440px) {
+  .block-footer__list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "puce1 puce2 puce3 puce4";
+  }
+}
 .block-logo {
   display: flex;
   justify-content: center;
@@ -248,6 +262,9 @@ footer {
   padding: 0 25px 60px 25px;
   position: relative;
 }
+.block-fonctionnement__title {
+  padding: 50px 0 40px 0;
+}
 .block-fonctionnement--grid {
   padding-left: 15px;
   display: grid;
@@ -257,17 +274,14 @@ footer {
   grid-gap: 40px;
   grid-template-areas: "list1" "list2" "list3";
 }
-.block-fonctionnement--grid > list1 {
+.block-fonctionnement--grid > #list1 {
   grid-area: list1;
 }
-.block-fonctionnement--grid > list2 {
+.block-fonctionnement--grid > #list2 {
   grid-area: list2;
 }
-.block-fonctionnement--grid > list3 {
+.block-fonctionnement--grid > #list3 {
   grid-area: list3;
-}
-.block-fonctionnement__title {
-  padding: 50px 0 40px 0;
 }
 .block-fonctionnement__list {
   display: flex;
@@ -275,7 +289,7 @@ footer {
   align-items: center;
   cursor: pointer;
   border-radius: 15px;
-  max-width: 290px;
+  max-width: 280px;
   background-color: #f6f6f6;
   box-shadow: 0 0 5px 0 #2b2a2a3b;
 }
@@ -313,16 +327,16 @@ footer {
   grid-gap: 40px;
   grid-template-areas: "restau1" "restau2" "restau3" "restau4";
 }
-.block-restaurants--grid > restau1 {
+.block-restaurants--grid > #restau1 {
   grid-area: restau1;
 }
-.block-restaurants--grid > restau2 {
+.block-restaurants--grid > #restau2 {
   grid-area: restau2;
 }
-.block-restaurants--grid > restau3 {
+.block-restaurants--grid > #restau3 {
   grid-area: restau3;
 }
-.block-restaurants--grid > restau4 {
+.block-restaurants--grid > #restau4 {
   grid-area: restau4;
 }
 .block-restaurants__restau {
@@ -377,11 +391,11 @@ footer {
 }
 .block-restaurants__coeur--vide:hover + .block-restaurants__coeur--plein {
   opacity: 1;
-  animation: 2000ms ease-in-out 0ms forwards fill-heart;
+  animation: 1500ms ease-in-out 0ms forwards fill-heart;
 }
 .block-restaurants__coeur--vide:hover + .block-menu__coeur--plein {
   opacity: 1;
-  animation: 2000ms ease-in-out 0ms forwards fill-heart;
+  animation: 1500ms ease-in-out 0ms forwards fill-heart;
 }
 .block-restaurants__coeur--plein {
   width: 30px;
@@ -402,6 +416,35 @@ footer {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .block-fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .block-fonctionnement__list {
+    min-width: 280px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .block-fonctionnement--grid {
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: 1fr;
+    grid-gap: 40px;
+    grid-template-areas: "list1 list2 list3";
+  }
+
+  .block-restaurants--grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "restau1 restau2" "restau3 restau4";
+  }
+}
+@media screen and (min-width: 1440px) {
+  .block-fonctionnement--grid {
+    grid-gap: 100px;
+  }
+}
 .block-logo__icon {
   position: absolute;
   left: 20px;
@@ -421,7 +464,7 @@ footer {
 
 .block-menu {
   background-color: #f6f6f6;
-  border-radius: 30px 30px 0 0;
+  border-radius: 40px 40px 0 0;
   padding: 0 15px 0 15px;
   margin-top: -50px;
   position: relative;
@@ -461,7 +504,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0 10px 0;
+  padding: 30px 0 10px 0;
 }
 .block-menu--grid {
   display: grid;
@@ -470,13 +513,13 @@ footer {
   height: auto;
   grid-template-areas: "entrees" "plats" "desserts";
 }
-.block-menu--grid > entrees {
+.block-menu--grid > #entrees {
   grid-area: entrees;
 }
-.block-menu--grid > plats {
+.block-menu--grid > #plats {
   grid-area: plats;
 }
-.block-menu--grid > desserts {
+.block-menu--grid > #desserts {
   grid-area: desserts;
 }
 .block-menu__titre {
@@ -503,11 +546,11 @@ footer {
 }
 .block-menu__coeur--vide:hover + .block-restaurants__coeur--plein {
   opacity: 1;
-  animation: 2000ms ease-in-out 0ms forwards fill-heart;
+  animation: 1500ms ease-in-out 0ms forwards fill-heart;
 }
 .block-menu__coeur--vide:hover + .block-menu__coeur--plein {
   opacity: 1;
-  animation: 2000ms ease-in-out 0ms forwards fill-heart;
+  animation: 1500ms ease-in-out 0ms forwards fill-heart;
 }
 .block-menu__coeur--plein {
   width: 30px;
@@ -640,6 +683,25 @@ footer {
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
+}
+
+@media screen and (min-width: 1024px) {
+  .block-menu {
+    max-width: 768px;
+    margin: -50px auto 0 auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .block-menu {
+    max-width: 1980px;
+    margin: -50px auto 0 auto;
+  }
+  .block-menu--grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    grid-template-areas: "entrees plats desserts";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,11 +12,11 @@
       opacity: 0;
       & + .block-restaurants__coeur--plein {
         opacity: 1;
-        animation: 2000ms ease-in-out 0ms forwards fill-heart;
+        animation: 1500ms ease-in-out 0ms forwards fill-heart;
       }
       & + .block-menu__coeur--plein {
         opacity: 1;
-        animation: 2000ms ease-in-out 0ms forwards fill-heart;
+        animation: 1500ms ease-in-out 0ms forwards fill-heart;
       }
     }
   }
@@ -29,8 +29,6 @@
     stroke-width: 20;
     transition: opacity 1500ms;
     fill: url(#gradientheart);
-    //test autre animation//
-    // transform-origin: bottom;
     @include keyfillheart;
   }
 }
