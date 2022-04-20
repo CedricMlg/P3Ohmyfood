@@ -24,35 +24,10 @@
   margin-top: -50px;
   position: relative;
   &__container {
-    #card1 {
-      animation-delay: 100ms;
-    }
-    #card2 {
-      animation-delay: 300ms;
-    }
-    #card3 {
-      animation-delay: 500ms;
-    }
-    #card4 {
-      animation-delay: 700ms;
-    }
-    #card5 {
-      animation-delay: 900ms;
-    }
-    #card6 {
-      animation-delay: 1100ms;
-    }
-    #card7 {
-      animation-delay: 1300ms;
-    }
-    #card8 {
-      animation-delay: 1500ms;
-    }
-    #card9 {
-      animation-delay: 1700ms;
-    }
-    #card10 {
-      animation-delay: 1900ms;
+    @for $i from 1 through 10 {
+      #card#{$i} {
+        animation-delay: $i * 150ms;
+      }
     }
   }
   &__restau {
